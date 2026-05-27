@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #FEDD00;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+
+.navbar-brand {
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    margin: 0 2px;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.nav-link.active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.divider {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(to right, #009739, #FEDD00);
+    border-radius: 2px;
+    margin-top: 15px;
+}
+
+
+.card {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(5px);
+}
+
+.card-transparent {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.card-body {
+    background-color: transparent;
+}
+
+.card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2) !important;
+}
+
+.card-title {
+    color: #009739;
+}
+
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.card-img-fixed {
+    height: 220px;
+    object-fit: cover;
+    object-position: top;
+}
+
+
+.img-recorde {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+
+.icon-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+footer {
+    margin-top: auto;
+}
+
+
+.badge {
+    font-weight: 500;
+}
+
+
+.card hr {
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 12px 15px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-color: #009739;
+    box-shadow: 0 0 0 3px rgba(0, 151, 57, 0.2);
+}
+
+.form-label {
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.btn-success {
+    background-color: #009739;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #007a2e;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 151, 57, 0.3);
+}
+
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2rem;
+    }
+    
+    .display-5 {
+        font-size: 1.75rem;
+    }
+    
+    .card-img-top,
+    .card-img-fixed {
+        height: 180px;
+    }
+    
+    .img-recorde {
+        height: 220px;
+    }
+}
